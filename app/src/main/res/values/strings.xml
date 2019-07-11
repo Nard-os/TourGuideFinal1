@@ -9,4 +9,8 @@
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="greece">Greece</string>
+    <string name="ethiopia">Ethiopia</string>
+    <string name="axum">Axum</string>
+    <string name="semen_moutains">Semen Moutains</string>
 </resources>
