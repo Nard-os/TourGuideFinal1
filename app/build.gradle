@@ -31,7 +31,7 @@ dependencies {
 
 
     def room_version = "2.2.0-alpha01" // 2.1.0 for latest stable version
-    def coroutines_version = "1.2.1"
+
     def arch_lifecycle_version = "2.1.0-alpha04"
     def androidx_arch_version = "2.0.0"
 
@@ -49,6 +49,7 @@ dependencies {
 
     // Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
+
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
