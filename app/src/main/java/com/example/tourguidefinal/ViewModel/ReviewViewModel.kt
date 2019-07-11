@@ -12,6 +12,6 @@ class ReviewViewModel(
 ): ViewModel() {
     val review: LiveData<Review>
     init {
-        review = reviewRepository.getReview(title)
+        review = reviewRepository.getReviews(title = title)
     }
 }

@@ -7,7 +7,7 @@ import com.example.tourguidefinal.Data.Profile
 @Dao
 interface ProfileDao {
     @Query("SELECT * FROM profiles WHERE user_name=:user_name")
-    fun getProfilesByuser_name(user_name:Long): Profile
+    fun getProfilessByuser_name(user_name:Long): Profile
     fun getAllProfiles(username: Long.Companion):LiveData<Profile>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

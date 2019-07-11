@@ -1,5 +1,6 @@
 package com.example.tourguidefinal.Repository
 
+import androidx.lifecycle.LiveData
 import com.example.tourguidefinal.Dao.ReviewDao
 import com.example.tourguidefinal.Data.Review
 
@@ -15,6 +16,10 @@ class ReviewRepository(private val reviewDao: ReviewDao) {
     }
     fun updateReview(review: Review){
         reviewDao.updateReview(review)
+    }
+
+    fun getReviews(title: String): LiveData<Review> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     companion object{
