@@ -22,10 +22,13 @@
     <fragment android:id="@+id/loginFragment2" android:name="com.example.tourguidefinal.LoginFragment"
               android:label="fragment_login" tools:layout="@layout/fragment_login">
         <action android:id="@+id/action_loginFragment2_to_profileFragment" app:destination="@id/profileFragment"/>
+        <action android:id="@+id/action_loginFragment2_to_mainActivity" app:destination="@id/mainActivity"/>
     </fragment>
     <fragment android:id="@+id/countryFragment2" android:name="com.example.tourguidefinal.CountryFragment"
               android:label="fragment_country2" tools:layout="@layout/fragment_country2">
         <action android:id="@+id/action_countryFragment2_to_ethiopiaFragment" app:destination="@id/ethiopiaFragment"/>
         <action android:id="@+id/action_countryFragment2_to_greeceFragment" app:destination="@id/greeceFragment"/>
     </fragment>
+    <activity android:id="@+id/mainActivity" android:name="com.example.tourguidefinal.MainActivity"
+              android:label="fragment_signup" tools:layout="@layout/fragment_signup"/>
 </navigation>
