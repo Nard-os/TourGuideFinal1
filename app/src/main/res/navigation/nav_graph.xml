@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFrag">
+
+    <fragment android:id="@+id/ethiopiaFragment" android:name="com.example.tourguidefinal.EthiopiaFragment"
+              android:label="fragment_ethiopia2" tools:layout="@layout/fragment_ethiopia2">
+        <action android:id="@+id/action_ethiopiaFragment_to_reviewEthio" app:destination="@id/reviewEthio"/>
+    </fragment>
+    <fragment android:id="@+id/greeceFragment" android:name="com.example.tourguidefinal.GreeceFragment"
+              android:label="fragment_greece" tools:layout="@layout/fragment_greece"/>
+    <fragment android:id="@+id/profileFragment" android:name="com.example.tourguidefinal.ProfileFragment"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+    <fragment android:id="@+id/reviewEthio" android:name="com.example.tourguidefinal.ReviewEthio"
+              android:label="fragment_review_ethio" tools:layout="@layout/fragment_review_ethio"/>
+    <fragment android:id="@+id/homeFrag" android:name="com.example.tourguidefinal.HomeFrag"
+              android:label="fragment_home2" tools:layout="@layout/fragment_home2">
+        <action android:id="@+id/action_homeFrag_to_loginFragment2" app:destination="@id/loginFragment2"/>
+        <action android:id="@+id/action_homeFrag_to_countryFragment2" app:destination="@id/countryFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/loginFragment2" android:name="com.example.tourguidefinal.LoginFragment"
+              android:label="fragment_login" tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_loginFragment2_to_profileFragment" app:destination="@id/profileFragment"/>
+    </fragment>
+    <fragment android:id="@+id/countryFragment2" android:name="com.example.tourguidefinal.CountryFragment"
+              android:label="fragment_country2" tools:layout="@layout/fragment_country2">
+        <action android:id="@+id/action_countryFragment2_to_ethiopiaFragment" app:destination="@id/ethiopiaFragment"/>
+        <action android:id="@+id/action_countryFragment2_to_greeceFragment" app:destination="@id/greeceFragment"/>
+    </fragment>
+</navigation>

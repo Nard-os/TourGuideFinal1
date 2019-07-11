@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            tools:context=".InfoFragment">
+        <ImageView
+                android:id="@+id/imageView5"
+                android:src="@drawable/lalibela"
+                android:layout_width="112dp"
+                android:layout_height="83dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.08" android:layout_marginBottom="60dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:layout_constraintVertical_bias="1.0"/>
+        <ImageView
+                android:src="@drawable/semen"
+                android:layout_width="114dp"
+                android:layout_height="98dp"
+                android:id="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="272dp"
+                android:layout_marginRight="272dp" app:layout_constraintVertical_bias="0.121"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.941"/>
+        <TextView
+                android:text="Countries"
+                android:layout_width="122dp"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:id="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="160dp"
+                android:layout_marginRight="160dp" app:layout_constraintVertical_bias="0.016"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+                android:src="@drawable/lalibela"
+                android:layout_width="114dp"
+                android:layout_height="98dp"
+                android:id="@+id/imageView7"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="260dp"
+                android:layout_marginRight="260dp" app:layout_constraintVertical_bias="0.139" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+        <ImageView
+                android:src="@drawable/test"
+                android:layout_width="112dp"
+                android:layout_height="98dp"
+                android:id="@+id/imageView11"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="260dp"
+                android:layout_marginRight="260dp" app:layout_constraintVertical_bias="0.042" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+        <ImageView
+                android:src="@drawable/lalibela"
+                android:layout_width="114dp"
+                android:layout_height="98dp"
+                android:id="@+id/imageView12"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="244dp"
+                android:layout_marginRight="244dp" app:layout_constraintVertical_bias="0.08"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.355"/>
+        <Button
+                android:text="Lalibela"
+                android:layout_width="148dp"
+                android:layout_height="50dp"
+                android:id="@+id/comment_button"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp" app:layout_constraintVertical_bias="0.458" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/button2"/>
+        <Button
+                android:text="Semen Moutains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp" app:layout_constraintVertical_bias="0.19" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/button3"/>
+        <Button
+                android:text="Axum"
+                android:layout_width="147dp"
+                android:layout_height="51dp"
+                android:id="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp" app:layout_constraintVertical_bias="0.208"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/button5"/>
+        <Button
+                android:text="Ethiopia"
+                android:layout_width="156dp"
+                android:layout_height="49dp"
+                android:id="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="68dp"
+                android:layout_marginRight="68dp" app:layout_constraintVertical_bias="0.108"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+                android:text="Greece"
+                android:layout_width="160dp"
+                android:layout_height="46dp"
+                android:id="@+id/button5"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp" app:layout_constraintVertical_bias="0.13999999"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/button4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
