@@ -12,7 +12,7 @@ import org.hamcrest.CoreMatchers
 import org.junit.*
 
 class ProfileRepositoryTest {
-    private lateinit var repo: profileRepository
+    private lateinit var repo: ProfileRepository
     private lateinit var database: MyDatabase
 
     @get:Rule
