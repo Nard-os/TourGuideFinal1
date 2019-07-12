@@ -12,7 +12,7 @@ interface ReviewDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertReview(review: Review)
-    fun saveReview(Review: String)
+    fun saveReview(Review: Review)
 
     @Update
     fun updateReview(country: Country):String
