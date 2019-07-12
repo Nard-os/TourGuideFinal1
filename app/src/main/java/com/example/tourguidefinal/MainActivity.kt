@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             profileDao = myDatabase.profileDao()
             countryDao = myDatabase.countryDao()
             reviewDao = myDatabase.reviewDao()
+
         }
 
 

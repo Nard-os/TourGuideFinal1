@@ -11,7 +11,11 @@ import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import com.example.tourguidefinal.Network.TourApiService
 import com.example.tourguidefinal.databinding.FragmentHome2Binding
+import kotlinx.android.synthetic.main.fragment_home2.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class HomeFrag : Fragment() {
 
@@ -30,7 +34,31 @@ class HomeFrag : Fragment() {
             }
 
         }
+        country_button.setOnClickListener{
+            val country = readFields()
+            GlobalScope.launch ( Dispatcher.IO) {
+                if(connected()){
+                    val response: Response<Void>=
+                    arrayOf(TourApiService.getInstance().insertCountryAsync(country).await
+                        ()
+                Log.d("HomeFrag". response.message())}
+            }
+            clearFields()
+        }
+        login_button.setOnClickListener{
+            val country = readFields()
+            GlobalScope.launch ( Dispatcher.IO) {
+                if(connected()){
+                    val response: Response<Void>=
+                    arrayOf(TourApiService.getInstance().insertCountryAsync(country).await
+                        ()
+                            Log.d("HomeFrag". response.message())}
+            }
+            clearFields()
+        }
+
             return inflater.inflate(R.layout.fragment_home2, container, false)
+        }
         }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

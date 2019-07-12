@@ -8,15 +8,15 @@ import com.example.tourguidefinal.Data.Profile
 interface ProfileDao {
     @Query("SELECT * FROM profiles WHERE user_name=:user_name")
     fun getProfilessByuser_name(user_name:Long): Profile
-    fun getAllProfiles(username: Long.Companion):LiveData<Profile>
+    fun getAllProfiles(username: String.Companion):LiveData<Profile>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-        fun insertusername(profile: Profile):Long
+        fun insertusername(profile: Profile):String
 
     @Update
-    fun updateProfile(profile: Profile): Long
+    fun updateProfile(profile: Profile): String
 
     abstract fun deleteProfile(profile: Profile)
     fun insertProfiles(profile: Profile)
-    fun getProfile(username: Long): Any
+    fun getProfile(username: String): Any
 }
